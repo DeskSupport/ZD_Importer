@@ -49,7 +49,7 @@ def request(method, uri, params = {})
       unless (json['errors'].nil?)
         if (json['errors'][0].include?("Unable to find or create customer with email address") || json['errors'][0].include?("Email is invalid."))
           puts "Going to retry with default email..."
-          params['customer_email'] = "invalid-email@snapcomms.com"
+          params['customer_email'] = "invalid-email@desk.com"
           return request(method, uri, params)
         end
       end
