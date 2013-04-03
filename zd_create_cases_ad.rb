@@ -156,7 +156,7 @@ DB['select t.zd_id as "external_id", c.created_at as "comment_created", c.id as 
     end
  
     if row[:customer_email].nil?
-      row[:customer_email] = "info@snapcomms.com"
+      row[:customer_email] = "info@desk.com"
     end
  
     new_case = {
